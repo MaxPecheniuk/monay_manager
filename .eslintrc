@@ -1,0 +1,54 @@
+{
+  "extends": [
+    "eslint:recommended",
+    "plugin:react/recommended"
+  ],
+  "parser": "babel-eslint",
+  "plugins": [
+    "react"
+  ],
+  "rules": {
+    //0-off, 1-warn, 2-err, 120 length, 2-tab spase
+    "max-len": [2, 120, 2, {"ignoreComments": true}],
+    "react/prop-types": [0],
+    "linebreak-style": ["error", "windows"],
+    "react/jsx-filename-extension": [1, { "extensions": [".js", ".jsx"] }],
+    "react/jsx-handler-names": 2,
+    "react/jsx-pascal-case": 2,
+//    "no-console": "error",
+    "no-debugger": "error",
+//    "spaced-comment": ["error", "always", {
+//      "block":{
+//        "balanced": false
+//      }
+//    }],
+    "curly": 2,
+//    "eol-last": ["error", "always"],
+    "guard-for-in": "error",
+    "indent": ["error", 2],
+    "no-caller": 2,
+    "no-bitwise": 2,
+    "no-multiple-empty-lines": ["error", { "max": 1}],
+    "no-empty": "error",
+    "no-eval": "error",
+//    "no-unused-expression": 2,
+    "no-use-before-define": 2,
+    "jsx-quotes": ["error", "prefer-double"],
+    "quotes": [2, "single"],
+    "semi": 2,
+    "default-case": 2,
+    "eqeqeq": [2, "always"],
+    "no-whitespace-before-property": 2,
+    "space-before-blocks": [2, "always"]
+  },
+  "settings": {
+    "react": {
+      "version": "detect"
+    }
+  },
+  "env": {
+    "browser": true,
+    "node": true,
+    "es6": true
+  }
+}
